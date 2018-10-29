@@ -32,13 +32,13 @@ class App extends Component {
   }
 
   updatePost(id, text) {
-    axios.put(`/api/posts?id=${ id }`, { text }).then(results => {
+    axios.put(`/api/posts/${ id }`, { text }).then(results => {
       this.setState({posts: results.data})
     })
   }
 
   deletePost(id) {
-    axios.delete(`/api/posts?id=${ id }`).then(results => {
+    axios.delete(`/api/posts/${ id }`).then(results => {
       this.setState({posts: results.data});
     })
   }
