@@ -1,0 +1,35 @@
+.App__parent {
+  width: 100%;
+  min-width: 1000px;
+  min-height: 100vh;
+}
+
+.App__content {
+  width: 1000px;
+  margin: 0 auto;
+  min-height: calc( 100vh - 50px );
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.sendingStuff{
+  width: 80%;
+  height: 60vh;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  overflow: scroll;
+  border: 5px solid gray;
+  padding: 0;
+  border-radius:5px;
+  box-shadow: 5px 5px 10px gray;
+}
+
+.addingStuff{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
