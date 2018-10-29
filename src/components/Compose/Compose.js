@@ -36,13 +36,9 @@ export default class Compose extends Component {
       <section className="Compose__parent">
         <div className="Compose__top">
 
-          <div className="Compose__profile-picture">
-            <ProfileIcon />
-          </div>
-
           {/* This is where you type the message for your new post */}
           <input className="Compose__input"
-                 placeholder="What's on your mind?"
+                 placeholder="Im only completely confused."
                  value={ text }
                  onChange={ ( e ) => this.updateText( e.target.value ) } />
 

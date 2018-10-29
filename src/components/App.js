@@ -26,25 +26,25 @@ class App extends Component {
   }
   
   componentDidMount() {
-    axios.get(`https://practiceapi.devmountain.com/api/posts`).then(results=>{
+    axios.get(`/api/posts`).then(results=>{
       this.setState({posts: results.data})
     })
   }
 
   updatePost(id, text) {
-    axios.put(`https://practiceapi.devmountain.com/api/posts?id=${ id }`, { text }).then(results => {
+    axios.put(`/api/posts?id=${ id }`, { text }).then(results => {
       this.setState({posts: results.data})
     })
   }
 
   deletePost(id) {
-    axios.delete(`https://practiceapi.devmountain.com/api/posts?id${ id }`).then(results => {
+    axios.delete(`/api/posts?id=${ id }`).then(results => {
       this.setState({posts: results.data});
     })
   }
 
   createPost(text) {
-    axios.post(`https://practiceapi.devmountain.com/api/posts`, {text}).then(results=>{
+    axios.post(`/api/posts`, {text}).then(results=>{
       this.setState({posts: results.data});
     })
   }

@@ -2,6 +2,8 @@
   width: 100%;
   min-width: 1000px;
   min-height: 100vh;
+  background-image: url('./images/Pic1.png');
+  background-size: cover;
 }
 
 .App__content {
@@ -15,15 +17,12 @@
 }
 .sendingStuff{
   width: 80%;
-  height: 60vh;
+  height: 500px;
   margin: 0 auto;
   margin-top: 50px;
   display: flex;
   overflow: scroll;
-  border: 5px solid gray;
   padding: 0;
-  border-radius:5px;
-  box-shadow: 5px 5px 10px gray;
 }
 
 .addingStuff{
@@ -32,4 +31,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 50px;
+  color: rgb(251, 255, 0);
+  font-size: 20px;
+  font-weight: 600;
 }

@@ -77,8 +77,8 @@ export default class Post extends Component {
             <ProfileIcon />
           </div>
 
-          <span className="Post__name">DevMountain</span>
-          <span className="Post__handle">@DevMountain</span>
+          <span className="Post__name">ME</span>
+          <span className="Post__handle">@Me.com</span>
 
           <span className="Post__date">- {date}</span>
         </div>
